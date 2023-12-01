@@ -4,4 +4,4 @@
     - name: installing apache2 webserver 
       apt: 
           name: apache2
-          state: present 
+          state: absent
