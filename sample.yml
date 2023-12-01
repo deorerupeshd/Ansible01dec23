@@ -2,7 +2,7 @@
 - hosts: all 
   become: yes
   tasks: 
-    - name: Remove "apache2" package
+    - name: adding "apache2" package
       apt:
          name: apache2
-         state: absent
+         state: present 
