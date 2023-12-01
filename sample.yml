@@ -1,5 +1,6 @@
 --- 
 - hosts: all 
+  become: yes
   tasks: 
     - name: Remove "apache2" package
       apt:
