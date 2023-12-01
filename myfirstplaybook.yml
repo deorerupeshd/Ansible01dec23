@@ -1,0 +1,12 @@
+--- 
+- hosts: 172.31.12.47
+  tasks: 
+    - name: installing git into node server 
+      apt:
+         name: git
+         state: present
+    
+    - name: installing wget on node server
+      apt: 
+        name: wget
+        state: present
