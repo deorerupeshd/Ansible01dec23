@@ -1,0 +1,16 @@
+---
+- hosts: 172.31.34.174
+  become: yes
+  tasks:
+    - name: installing webserver on node01
+      apt:
+         name: apache2
+         state: present
+         when: ansible_os_family == "Debian"
+    
+
+    - name: starting the service of a webserver
+      service:
+         name: apache2
+         state: started
+         when: ansible_os_family == "Debian"
