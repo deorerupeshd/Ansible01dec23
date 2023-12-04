@@ -18,5 +18,5 @@
 
 [mywebserver:vars]
 var= value
-mywebpackageonUbuntu= apache2222222
+mywebpackageonUbuntu= apache2
 mywebpackageonRedHat= httpd
