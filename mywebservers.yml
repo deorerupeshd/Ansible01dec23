@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: myUbntuserver
   become: yes
   tasks:
     - name: installing webserver on hosts
