@@ -15,5 +15,3 @@
 
 [myRedHatserver]
 172.31.31.126
-
-[mywebserver:vars]
