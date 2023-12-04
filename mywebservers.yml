@@ -1,5 +1,5 @@
 ---
-- hosts: myappserver
+- hosts: mywebserver
   become: yes
   tasks:
     - name: installing webserver on hosts
