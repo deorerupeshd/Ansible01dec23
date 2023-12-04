@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.34.174
+- hosts: 
   become: yes
   tasks:
     - name: installing webserver on node01
