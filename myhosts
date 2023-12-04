@@ -17,6 +17,3 @@
 172.31.31.126
 
 [mywebserver:vars]
-var= value
-mywebpackageonUbuntu= apache2
-mywebpackageonRedHat= httpd
