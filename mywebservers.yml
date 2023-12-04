@@ -1,5 +1,5 @@
 ---
-- hosts: myUbntuserver
+- hosts: myRedHatserver
   become: yes
   tasks:
     - name: installing webserver on hosts
