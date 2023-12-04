@@ -4,24 +4,24 @@
   tasks:
     - name: installing webserver on hosts
       apt:
-        name: apache2
+        name: "{{mywebpackageonUbuntu}}"
         state: present
       when: ansible_os_family =="Debian"
 
     - name: starting webserver service
       service:
-         name: apache2
+         name: "{{mywebpackageonUbuntu}}"
          state: started
       when: ansible_os_family =="Debian"
 
     - name: i want to install webserver on RedHat 
       dnf:
-        name: httpd
+        name: "{{mywebpackageonRedHat}}"
         state: present
       when: ansible_os_family =="RedHat"
 
     - name: lets start the webserver on RedHat 
       service:
-         name: httpd
+         name: "{{mywebpackageonRedHat}}"
          state: started
       when: ansible_os_family =="RedHat"
