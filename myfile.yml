@@ -1,8 +1,5 @@
 --- 
-- hosts: 172.31.31.126
-  become: yes
-  tasks:
-    - name: file creation
-      file:
-        path: /home/ubuntu/my2ndfile
-        state: touch
+- name: file creation
+  file:
+    path: /home/ubuntu/my2ndfile
+    state: touch
