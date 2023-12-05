@@ -1,0 +1,12 @@
+---
+- hosts: 172.31.30.93
+  become: yes
+  vars:
+    - var01: git 
+    - var02: wget
+    - var03: apache2
+
+  tasks:
+     - name: print var02 
+       debug:
+         msg: "{{var02}}"
