@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.31.126
+- hosts: mywebserver
   become: yes
   tasks:
     - include_tasks: myfile.yml
@@ -8,3 +8,4 @@
       dnf:
         name: httpd
         state: present 
+      when: ansible_os_family =="RedHat"
