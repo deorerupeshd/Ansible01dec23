@@ -9,3 +9,15 @@
     - name: i want to print that command result 
       debug: 
         msg: "{{mycommandresult}}"
+
+    - name: install git
+      apt:
+        name: git
+        state: present
+      when: mycommandresult.stderr !="" 
+
+    - name: install wget
+      apt: 
+        name: install wget
+        state: present
+      when: mycommandresult.stderr =="" 
