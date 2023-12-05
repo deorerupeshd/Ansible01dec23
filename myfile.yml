@@ -4,5 +4,5 @@
   tasks:
     - name: file creation
       file:
-        path: /home/ubuntu/myfirstfile
+        path: /home/ubuntu/my2ndfile
         state: touch
