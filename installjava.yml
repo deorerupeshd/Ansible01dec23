@@ -1,0 +1,15 @@
+---
+- hosts: mywebserver
+  become: yes
+  tasks:
+    - name: installing java-11 package on Ubuntu Node
+      apt:
+        name: "{{javapackonUbuntu}}"
+        state: present
+      when: ansible_os_family =="Debian"
+
+    - name: installing java-11 package on RedHat Node
+      dnf:
+        name: "{{javapackonRedHat}}"
+        state: present
+      when: ansible_os_family =="RedHat"
