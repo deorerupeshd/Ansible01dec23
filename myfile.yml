@@ -1,5 +1,5 @@
 --- 
-- hosts: 172.31.30.93
+- hosts: 172.31.31.126
   become: yes
   tasks:
     - name: file creation
