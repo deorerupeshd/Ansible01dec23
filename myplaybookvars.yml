@@ -5,8 +5,9 @@
     - var01: git 
     - var02: wget
     - var03: apache2
+    - var04: rupesh deore
 
   tasks:
-     - name: print var02 
+     - name: print var04 
        debug:
-         msg: "{{var02}}"
+         msg: "{{var04}}"
