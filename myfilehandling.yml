@@ -4,11 +4,11 @@
   tasks:
     - include_tasks: myfile.yml
 
-    - name: install webserver on RedHat server
-      dnf:
-        name: httpd
+    - name: install webserver on ubuntu server
+      apt:
+        name: apache2 
         state: present 
-      when: ansible_os_family =="RedHat"
+      
 
     - name: copy static file from laptop to ubuntu Node side 
       copy:
