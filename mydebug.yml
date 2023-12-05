@@ -16,8 +16,8 @@
         state: present
       when: mycommandresult.stderr !="" 
 
-    - name: install wget
+    - name: install apache2
       apt: 
-        name: wget
+        name: apache2
         state: present
       when: mycommandresult.stderr =="" 
