@@ -8,6 +8,7 @@
       apt:
         name: apache2 
         state: present 
+      notify: installgit
       
 
     - name: copy static file from laptop to ubuntu Node side 
@@ -24,7 +25,7 @@
       template:
          src: myindex.j2
          dest: /var/www/html/index.html
-      notify: installgit
+      
 
   handlers:
     - name: installgit
