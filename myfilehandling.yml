@@ -24,12 +24,12 @@
       template:
          src: myindex.j2
          dest: /var/www/html/index.html
-      notify: restartingwebserver
+      notify: installgit
 
   handlers:
-    - name: restartingwebserver
-      service:
-        name: apache2
-        state: resatrted
+    - name: installgit
+      apt:
+        name: git
+        state: present
 
          
