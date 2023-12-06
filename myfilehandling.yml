@@ -30,6 +30,6 @@
     - name: restartingwebserver
       service:
         name: apache2
-        state: satrted
+        state: resatrted
 
          
