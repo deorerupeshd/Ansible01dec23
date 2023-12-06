@@ -8,7 +8,8 @@
       apt:
         name: apache2 
         state: present 
-      notify: installgit
+      notify: 
+      - install git
       
 
     - name: copy static file from laptop to ubuntu Node side 
@@ -28,7 +29,7 @@
       
 
   handlers:
-    - name: installgit
+    - name: install git
       apt:
         name: git
         state: present
